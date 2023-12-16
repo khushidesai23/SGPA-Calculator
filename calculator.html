@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <script src="calc.js"></script> 
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <h1>Calculator</h1>
+
+    <table id="calcTable">
+        <tr>
+            <th>Subject Name</th>
+            <th>Subject Credit</th>
+            <th>IA marks obtained</th>
+            <th>Mid Sem Marks</th>
+            <th>End Sem Marks</th>
+            <th>Result</th>
+            <th>Grade</th>
+            <th>Grade Point</th>
+        </tr>
+        <tr>
+            <td><input type="text" class="sub"></td>
+            <td><input type="number" class="credit"></td>
+            <td><input type="number" class="input" oninput="calculate(this)"></td>
+            <td><input type="number" class="input" oninput="calculate(this)"></td>
+            <td><input type="number" class="input" oninput="calculate(this)"></td>
+            <!-- <td><input type="number" id="end"></td> -->
+            <td><span class="result">0</span></td>
+            <td><span class="grade">F</span></td>
+            <td><span class="gradePoint">0</span></td>
+
+        </tr>
+    </table>
+    <button onclick="addRow()">Add Row</button>
+    <button onclick="calculateSGPA()">Calculate SGPA</button>
+    <table>
+        <tr>
+            <th>
+                SGPA
+            </th>
+            <th>
+                <span class="SGPA">0</span>
+            </th>
+        </tr>
+    </table>
+    <!-- <button onclick="calculateCGPA()">Calculate CGPA</button> -->
+
+</body>
+
+</html>
